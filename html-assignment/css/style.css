@@ -1,0 +1,33 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 18px;
+}
+header, footer {
+    background-color: blanchedalmond;
+}
+.site-title {
+    color: brown;
+}
+
+
+#my-image{
+    box-shadow: 0 0 2px 1px black;
+}
+section>ul>li:nth-child(odd){
+    background-color: aqua;
+}
+ul {
+    list-style-type: square;
+}
+nav ul{
+    list-style: none;
+}
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    padding:5px 10px;
+    background-color: aqua;
+    border:1px solid coral;
+}
+nav a:hover, nav a:focus{
+    background-color: blueviolet;
+}
