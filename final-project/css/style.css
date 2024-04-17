@@ -1,0 +1,277 @@
+/* Main styles */
+body {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    margin: 0;
+    padding: 0;
+  
+}
+
+.container {
+    max-width:1000px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.intro_button{
+    background-color: #c78c06;
+}
+
+#home {
+    background-image: url(../images/main-banner.jpg);
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    color: black;
+}
+
+.home-btn {
+    background-color: #c78c06;
+    
+}
+/* Specific style for the Home link */
+.navbar ul li a.home-btn {
+    color: black; /* Change color for the Home link */
+    background-color: #c78c06; /* Background color for the Home link */
+  }
+
+
+.overlay {
+    position: absolute;
+    
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black color */
+    padding: 20px;
+    text-align: center;
+    color: white;
+  }
+
+  
+.aboutus{
+    background-color: #ffe6ac;
+    margin: 10px;
+    width: 100%;
+}
+
+
+
+.aboutus_article{
+    background-color: #ffe6ac;
+    min-width: 100px;
+   
+    
+}
+
+.digitaltrans{
+    background-color: #ffe6ac;
+}
+
+.marketing{
+    background-color: #ffe6ac;
+    margin: 10px;
+}
+
+.video_production{
+    background-color: #ffe6ac;
+    margin: 10px;
+}
+
+.web_development{
+    background-color: #ffe6ac;
+    margin: 10px;
+}
+
+.print{
+    background-color: #ffe6ac;
+    margin: 10px;
+}
+
+.container{
+    background-image: url(../images/vision.jpg);
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    color: white;
+}
+
+.vision{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black color */
+    padding: 20px;
+    text-align: center;
+    color: white;}
+
+    .our_vision_button_design{
+    border:1px solid#c78c06 ;
+}
+    
+
+.our_team{
+    background-color: #ffe6ac;
+}
+
+.our_team p,
+.our_team h3,
+.our_team h6 {
+    margin: 0;
+}
+
+.our_team h6 {
+    border-bottom: 1px solid#c78c06;
+}
+
+.our_team_description{
+    background-color: #ffe6ac;
+}
+
+.lists{
+    background-color: #ffe6ac;
+}
+
+.navbar ul {
+    list-style: none;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    color:#c78c06
+    
+}
+
+.search-container {
+    position: relative;
+  }
+  
+  /* Styles for the magnifying glass icon */
+.fa-magnifying-glass {
+    font-size: 16px;
+    border: 1px solid#c78c06; /* Add border around the icon */
+    border-radius: 3px; /* Add border radius for a rounded look */
+    padding: 3px; /* Add padding to the icon */
+  }
+  
+  
+
+
+/* change logo size here */
+.navbar img {
+    width: 100%;
+}
+
+.navbar li {
+    text-align: center;
+}
+
+.navbar a {
+    color:#c78c06;
+    text-decoration: none;
+    padding: 15px;
+   display: block;
+   text-align: center;
+}
+
+/*desktop size*/
+@media screen and (min-width: 1200px) {
+    
+    nav ul li {
+        box-sizing: border-box;
+        display: inline-block;
+        width: 190px;
+    }
+    tr:nth-child(6){
+        position: fixed;
+    }
+}
+
+button {
+    background-color:black;
+    color: #fff;
+    padding: 10px;
+   
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    
+    outline: 4px;
+    border:1px solid black;
+}
+
+.digitaltrans button{
+    background-color:black;
+    color: #fff;
+    padding: 10px;
+   
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+.opening-hours{
+    width: 80%;
+    
+    border-collapse: collapse;
+}
+
+.opening-hours th,
+.opening-hours td {
+  border: 1px solid #ccc;
+  padding: 10px;
+ 
+  text-align: center;
+}
+
+.opening-hours .day {
+    background-color: #ffe6ac;
+  }
+  
+  .opening-hours .hours {
+    background-color: #ffe6ac;
+  }
+
+  .opening-hours tr:nth-child(1) {
+    background-color: #ffe6ac;
+  }
+
+  .message_us input[type="text"]{
+    width: 50px;
+  }
+.message_us input[type="email"],
+.message_us textarea {
+  width: 95%; /* Makes the input fields and textarea take full width */
+  padding: 10px; /* Adds padding inside the input fields and textarea */
+  border: 1px solid #ccc; /* Adds a border around the input fields and textarea */
+  
+  margin-bottom: 15px; /* Adds space between each input field and textarea */
+}
+
+.message_us textarea {
+    resize: vertical; /* Allows the textarea to be resized vertically */
+    min-height: 150px; /* Sets a minimum height for the textarea */
+  }
+  
+
+  .send{
+    color: #c78c06;
+  }
+
+  /* Default styles for the map */
+.gmap {
+    width: 100%; /* Full width by default */
+    height: 400px; /* Default height */
+  }
+  
+  /* Media query for screens with a minimum width of 760px */
+  @media only screen and (min-width: 760px) {
+    .gmap {
+      height: 600px; /* Increase height to 600px for screens at least 1200px wide */
+    }
+  }
+
+  .copyright{
+    background-color: black;
+    color: #c78c06;
+  }
+
+
+ 
+

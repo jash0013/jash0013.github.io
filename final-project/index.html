@@ -4,83 +4,58 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Page Mock-up</title>
     <script src="https://kit.fontawesome.com/2d728a0379.js" crossorigin="anonymous"></script>
   </head>
   <body>
 
 <!--Header-->
-    <div class="header">
-      <div>
-        <img src="images/logo.png" alt="stylesheet" > <!--insert image in the header -->
-      
-    <nav>
+     <nav class="navbar">
       <ul>
-        <li>
-          <a href="#home">Home</a>
-        </li>
-      </ul>
-    </nav>
-    <nav>
-      <ul>
-        <li>
-          <a href="#about us">About us</a>
-        </li>
-      </ul>
+        <li><img src="images/logo.png" alt="logo" > </li><!--insert image in the header -->
+        <li><a href="#home"class="home-btn">Home</a></li>
+        <li><a href="#aboutus">Aboutus</a></li>
+        <li><a href="#Services">Services</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><input type="text" placeholder="Search" name="search">
+        <i class="fa-solid fa-magnifying-glass"></i></li>
+        </ul>  
     </nav> 
-    <nav>
-      <ul>
-        <li>
-          <a href="#services">Services</a>
-        </li>
-      </ul>
-    </nav>  
-    <nav>
-      <ul>
-        <li>
-          <a href="#team">Team</a>
-        </li>
-      </ul>
-    </nav>  
-    <nav>
-      <ul>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-    </nav>     
-    </div>
- <div class="header_searchbar">
-        <input type="text" placeholder="Search" name="search">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </div>
-    </div>
+         
+     
+     
+        
+      
+   
+
+  
   
                   
      
 
 <!--Intro-->
-    <div class="intro" id="home">
-      <img src="images/main-banner.jpg" alt="stylesheet"> <!--add image in background star media in next line as taught in class-->
-      <div class="intro_article"> 
+    <div class="container" id="home">
+      <!-- <img src="images/main-banner.jpg" alt="stylesheet"> add image in background star media in next line as taught in class -->
+      <div class="overlay"> 
         <article> <!--adjust line spacing-->
-          <h2> Welcome to Three Star Media </h2> 
+          <h1> Welcome to Three Star Media </h2> 
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti velit sit natus quis, odio dolorum, obcaecati minus fugit veritatis debitis nam voluptatibus laudantium earum consequatur officia dicta sapiente quaerat modi!
+       <button class="intro_button"> Connect with us &#11208</button>
           </p>
         </article>
       </div>
-      <div class="intro_div">
-        <button class="intro_button"> Connect with us &#11208</button> 
-      </div>
-    </div>
+        </div>
+  
 
 <!--About Us-->
-    <div class="aboutus">
+    <div class="aboutus" id="aboutus">
       <div> 
         <img src="images/about-us.jpg" alt="stylesheet"> <!--add image on top of parent div-->
       </div>
-      <div class="aboutus_article" id="about us">
+      <div class="aboutus_article" id="aboutus">
         <article>
           <h2> About Us </h2>
          
@@ -91,7 +66,7 @@
       </div>
     </div>
   
-  <div class="our_services_container" id="services">
+  <div class="our_services_container" id="Services">
 <!--Digital transformation-->
     <div class="ourservices_heading">
       <h2> Our Services</h2>
@@ -144,8 +119,8 @@
     </div>
 
 <!--Web Development-->
-    <div class="Web_development">
-      <div class="Web_development_img">
+    <div class="web_development">
+      <div class="web_development_img">
         <img src="images/web.jpg" alt="stylesheet"> <!--Web development img to be added on top-->
       </div>
       <div class="Web_development_article">
@@ -176,28 +151,26 @@
     </div>
   </div>
 <!--Our Vision-->
-    <div class="our_vision"> <!--IMAGE GREATER THAN OTHER CONTAINERS-->
-      <img src="images/vision.jpg" alt="stylesheet">
+    <div class="container"> <!--IMAGE GREATER THAN OTHER CONTAINERS-->
+      <!--<img src="images/vision.jpg" alt="stylesheet">add image in background star media in next line as taught in class -->a
 
-      <div class="our_vision_article">
+      <div class="overlay" id="vision">
         <article>
           <h2> Our Vision </h2>
           <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla ullam reprehenderit iure, accusantium quod, repellendus tempora nisi dicta aperiam voluptate molestias voluptas mollitia iste quas corporis? Beatae facilis velit distinctio!</p>
-        </article>
-      </div>
-      <div class="our_vision_button"> 
-        <button class="our_vision_button_design"> Learn More &#11208</button> 
+         <button class="our_vision_button_design"> Learn More &#11208</button> 
+      </article>
+       
       </div>
     </div>  
 
 <!--Our team-->
-    <div class="our_team" id="team">
+    
       
       <div class="our_team_heading">
         <h2> Our Team</h2>
       </div>
-      
-      <div>
+      <div class="our_team" id="team">
         <div>
           <img src="images/john.jpg" alt="stylesheet"> <!--insert Img of our team-->
         </div>
@@ -208,9 +181,6 @@
           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vitae, dicta aspernatur maiores delectus nemo aliquid reiciendis expedita dolore qui suscipit necessitatibus nihil nostrum repudiandae repellat voluptatum facilis obcaecati optio.</p>
           </article>
         </div>
-      </div>
-
-      <div>
         <div>
           <img src="images/bob.jpg" alt="stylesheet"> <!--insert Img of our team-->
         </div>
@@ -241,25 +211,29 @@
 <!--Hours of operation-->
     <div>
       <div class="hours_of_opr_heading">
-        <h2> Hours of operation</h2>
+        <h2>Hours of operation</h2>
       </div>
-      <div class="hours_of_opr_div"> <!--adjust table as shown in assignment-->
-        <table class="hours_of_opr_table"> <!-- Give border to table as solid and heading to centre and data to left align-->
-          <tr>
-            <th> Days </th>
-            <th> Hours </th>
-          </tr>
-          <tr>
-            <td>Monday-Friday</td>
-            <td>9 AM - 6 PM</td>
-          </tr>
-          <tr>
-            <td>Saturday-Sunday</td>
-            <td> Closed</td>
-          </tr>
-        </table>
+      <table class="opening-hours">
+        <tr>
+          <th class="day">Day</th>
+          <th class="hours">Hours</th>
+        </tr>
+        <tr>
+          <td>Monday - Friday</td>
+          <td>9:00am to 6:00pm</td>
+        </tr>
+        <tr>
+          <td>Saturday-sunday</td>
+          <td>closed</td>
+        </tr>
+        
+      </table>
+          
+      
+          
+       
       </div>
-    </div>
+    
 
 <!--Location-->
     <div>
